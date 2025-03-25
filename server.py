@@ -4,7 +4,6 @@ from werkzeug.utils import secure_filename
 app=Flask('')
 app.config["SECRET_KEY"] = "supersecretkey"
 from werkzeug.utils import secure_filename
-from github import Github
 UPLOAD_FOLDER = "uploads"  # Папка для сохранения файлов
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)  # Создаём папку, если её нет
 
